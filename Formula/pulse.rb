@@ -9,7 +9,7 @@ class Pulse < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://repo.splunkdev.net/artifactory/generic/observability/qe/pulse/#{version}/pulse-darwin-arm64"
+      url "https://repo.splunkdev.net/artifactory/generic/observability/ao/pulse/#{version}/pulse-darwin-arm64"
       sha256 "01a5ec1194eba21d21389fb11966184218e5047fe55627072a49ff4d3348bd49"
     else
       odie "Pulse currently provides a Homebrew binary for Apple Silicon macOS only"
@@ -18,7 +18,7 @@ class Pulse < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://repo.splunkdev.net/artifactory/generic/observability/qe/pulse/#{version}/pulse-linux-amd64"
+      url "https://repo.splunkdev.net/artifactory/generic/observability/ao/pulse/#{version}/pulse-linux-amd64"
       sha256 "a78b2887c1682acefd36ac7227b0d9d98a52aa76e3f906fa582c74f6175a5e09"
     else
       odie "Pulse currently provides a Homebrew binary for Intel Linux only"
