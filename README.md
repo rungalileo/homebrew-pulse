@@ -27,7 +27,7 @@ Windows releases are published separately as `pulse-windows-amd64.exe` and are n
 The formula downloads versioned binaries from the Pulse Generic Artifactory path:
 
 ```text
-https://repo.splunkdev.net/artifactory/generic/observability/ao/pulse/<version>/
+https://repo.splunkdev.net/artifactory/generic/observability/ao/pulse/v<version>/
 ```
 
 The formula pins each binary with its SHA256 checksum. Public Homebrew installation requires anonymous read access to this Artifactory path.
